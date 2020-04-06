@@ -36,7 +36,7 @@ public class Board {
 		}
 		return pieces[position.getRow()][position.getColumn()];
 	}
-	public void placePeace(Piece piece, Position position) {
+	public void placePiece(Piece piece, Position position) {
 		if (thereIsAPiece(position)) {
 			throw new BoardException("Ja existe uma peca na posicao " + position);
 		}
